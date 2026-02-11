@@ -33,7 +33,7 @@ pipeline {
                     [$class: 'AmazonWebServicesCredentialsBinding',
                      credentialsId: 'aws-credentials']
                 ]) {
-                    dir('eks-terraform') {
+                    dir('Prime_Choice') {
                         sh '''
                           terraform init
                           terraform validate
